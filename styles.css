@@ -1,0 +1,21 @@
+:root{
+  --bg:#1f0f24;
+  --card:#2d1433;
+  --text:#ffe9f6;
+  --accent:#ff7a59;
+  --font:"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.6}
+.site-header{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 1.25rem;position:sticky;top:0;background:rgba(15,23,42,0.85);backdrop-filter:saturate(180%) blur(8px)}
+.site-header h1{font-size:1.25rem;margin:0}
+.site-header a{color:var(--text);text-decoration:none;margin-left:.75rem;opacity:.85}
+.site-header a:hover{color:var(--accent);opacity:1}
+.section{max-width:900px;margin:2rem auto;padding:1.25rem;border-radius:16px;background:var(--card);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.section h2{margin-top:0;color:var(--accent)}
+.about p{margin:.25rem 0 0}
+.skills ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.5rem;padding-left:1rem}
+.projects .project-card{padding:1rem;border:1px solid #1f2937;border-radius:12px}
+.projects .project-card a{color:var(--accent)}
+.contact a{color:var(--accent)}
+.site-footer{max-width:900px;margin:3rem auto;padding:1rem;text-align:center;opacity:.7}
