@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Phoenix Toon – Portfolio</title>
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Phoenix Toon</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="about"    class="section about">
+      <h2>About</h2>
+      <p>I am a Computer Science student who transferred from Mechanical Engineering. I like this better because I get to actually apply as I learn, not just learn a bunch of math I don't know if I will ever need.</p>
+    </section>
+    <section id="skills"   class="section skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Java • Data Structures</li>
+        <li>HTML/CSS • Git/GitHub</li>
+      </ul>
+    </section>
+    <section id="projects" class="section projects">
+      <h2>Projects</h2>
+      <article class="project-card">
+        <h3>Maze Game</h3>
+        <p>Console maze game using a Stack.</p>
+        <a href="https://github.com/<username>/maze-game">Source</a>
+      </article>
+    </section>
+    <section id="contact"  class="section contact">
+      <h2>Contact</h2>
+      <p>Email: pzctoon@gmail.com</p>
+      <p>GitHub: @Toonz63</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    © <span id="year"></span> Phoenix Toon
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
