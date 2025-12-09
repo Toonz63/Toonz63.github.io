@@ -1,52 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Phoenix Toon – Portfolio</title>
-  <link rel="stylesheet" href="styles.css?v=2">
-</head>
-<body>
-  <header class="site-header">
-    <h1>Phoenix Toon</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <section id="about"    class="section about">
-      <h2>About</h2>
-      <p>I am a Computer Science student who transferred from Mechanical Engineering. I like this better because I get to actually apply as I learn, not just learn a bunch of math I don't know if I will ever need.</p>
-    </section>
-    <section id="skills"   class="section skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Java • Data Structures</li>
-        <li>HTML/CSS • Git/GitHub</li>
-      </ul>
-    </section>
-    <section id="projects" class="section projects">
-      <h2>Projects</h2>
-      <article class="project-card">
-        <h3>Maze Game</h3>
-        <p>Console maze game using a Stack.</p>
-        <a href="https://github.com/<username>/maze-game">Source</a>
-      </article>
-    </section>
-    <section id="contact"  class="section contact">
-      <h2>Contact</h2>
-      <p>Email: pzctoon@gmail.com</p>
-      <p>GitHub: @Toonz63</p>
-    </section>
-  </main>
-  <footer class="site-footer">
-    © <span id="year"></span> Phoenix Toon
-  </footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSCE 190: Phoenix Toon</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Phoenix Toon</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <!-- About Section -->
+      <section id="about" class="section about">
+        <h2>About</h2>
+        <p>
+          I am a Computer Science student who transferred from Mechanical
+          Engineering. I like this better because I get to actually apply as I
+          learn, not just learn a bunch of math I don't know if I will ever
+          need.
+        </p>
+      </section>
+      <!-- Skills Section -->
+      <section id="skills" class="section skills">
+        <h2>Skills</h2>
+        <span>
+          My resume: <a href="files/resume.pdf">PDF version</a> | <a href="table_res.html">HTML version</a>
+        </span>
+        <ul>
+          <li>Java • Data Structures</li>
+          <li>HTML/CSS • Git/GitHub</li>
+        </ul>
+      </section>
+      <!-- Projects Section -->
+      <section id="projects" class="section projects">
+        <h2>Projects</h2>
+        <!-- Problem Statement -->
+        <section class="project">
+          <a href="files/p-statement.pdf">
+            <h3>Problem Statement</h3>
+          </a>
+          <a href="files/p-statement.pdf">
+            <img src="images/p-statement.png" alt="Problem Statement" />
+          </a>
+          <p>
+            My dog is suffering from a severe treat shortage. She believes she’s
+            being underpaid in treats for services rendered (like existing and
+            being cute). Immediate snacks are required to prevent further tail
+            droop. Premium treats are breaking the budget, forcing a compromise
+            between rent and rawhide bones. A cost-effective solution is needed
+            for sustainable snack satisfaction.
+          </p>
+        </section>
+        <!-- Problem Statement Diagram -->
+        <section class="project">
+          <a href="files/p-statement.pdf">
+            <h3>
+              My dog is suffering from a severe treat shortage. She believes she’s
+              being underpaid in treats for services rendered (like existing and
+              being cute). Immediate snacks are required to prevent further tail
+              droop. Premium treats are breaking the budget, forcing a compromise
+              between rent and rawhide bones. A cost-effective solution is needed
+              for sustainable snack satisfaction.
+            </h3>
+          </a>
+          <a href="files/p-statement.pdf">
+            <img src="images/p-statement.png" alt="Problem Diagram" />
+          </a>
+          <p>The diagram shows ideas on how to address the dog treat problem.</p>
+        </section>
+        <!-- Affinity Diagram -->
+        <section class="project">
+          <a href="files/Affinity_DOC.pdf">
+            <h3>Affinity Diagram</h3>
+          </a>
+          <a href="files/Affinity_DOC.pdf">
+            <img src="images/Affinity_IMG.png" alt="Affinity Diagram" />
+          </a>
+          <p>The diagram shows ideas on how to address the dog treat problem.</p>
+        </section>
+      </section>
+      <!--Sketches Assignment-->
+      <section class="project">
+      <a href="files/Sketches_DOC.pdf"><h3>Sketches</h3></a>
+      <a href="files/Sketches_DOC.pdf"><img src="images/Sketches_IMG.png"></a>
+      <p>
+      This section shows hoe a app can help you bye food, find the food for your dog, and reorder what they like.
+      </p>
+      </section>
+      <section class="project">
+        <a href="https://github.com/Toonz63/JavaCode">
+            <h3>Java HW and Labs</h3>
+        </a>
+        <a href="https://github.com/Toonz63/JavaCode">
+            <img src="images/algorithmic_design.png">
+        </a>
+        <p>This repo is a section of Java code I wrote in school</p>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact" class="section contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:pzctoon@gmail.com">pzctoon@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Toonz63">@Toonz63</a></p>
+      </section>
+    </main>
+  </body>
 </html>
